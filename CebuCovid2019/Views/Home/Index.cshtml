@@ -1,31 +1,223 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿@*@{
+        ViewBag.Title = "Home Page";
+    }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    <div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>
+    </div>*@
+<br />
+<p class="text-center">
+    Check the Y/N box for Yes answer
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th align="center" class="text-center" colspan="2">Symptoms</th>
+            <th align="center" class="text-center">Points System</th>
+            <th align="center" class="text-center">Y/N</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/cough.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Do you have a Cough?
+            </td>
+            <td class="align-middle">
+                1 Point
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/colds.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Do you have Colds?
+            </td>
+            <td class="align-middle">
+                1 Point
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/toilet.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Are you having Diarrhea?
+            </td>
+            <td class="align-middle">
+                1 Point
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/sore-throat.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Do you have Sore Throat?
+            </td>
+            <td class="align-middle">
+                1 Point
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/pain.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Are you experiencing MYALGIA or Body Aches?
+            </td>
+            <td class="align-middle">
+                1 Point
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/headache.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Do you have a Headache?
+            </td>
+            <td class="align-middle">
+                1 Point
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/fever.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Do you have a fever? (Temperature 37.8 C and above)
+            </td>
+            <td class="align-middle">
+                1 Point
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/lung.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Are you having difficulty in breathing?
+            </td>
+            <td class="align-middle">
+                2 Points
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/asleep.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Are you experiencing Fatigue?
+            </td>
+            <td class="align-middle">
+                2 Points
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/plane.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Have you traveled recently during the past 14 days?
+            </td>
+            <td class="align-middle">
+                3 Points
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/china.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Do you have a travel history to a COVID-19 INFECTED AREA?
+            </td>
+            <td class="align-middle">
+                3 Points
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+        <tr>
+            <td class="text-center">
+                <img src="~/Images/Icons/people.png" height="40" />
+            </td>
+            <td class="align-middle">
+                Do you have direct contact or is taking care of a positive COVID-19 PATIENT?
+            </td>
+            <td class="align-middle">
+                3 Points
+            </td>
+            <td class="align-middle">
+                <input type="checkbox" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr />
+<div class="text-center">
+    <button type="button" class="btn btn-success btn-lg">
+        <i class="fa fa-paper-plane"></i> Submit Checklist
+    </button>
+    <button type="button" class="btn btn-primary btn-lg">
+        <i class="fa fa-edit"></i> Take Test Again
+    </button>
 </div>
